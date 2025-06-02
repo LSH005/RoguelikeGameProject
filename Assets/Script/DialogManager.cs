@@ -5,7 +5,7 @@ using System.Collections;
 
 public class DialogManager : MonoBehaviour
 {
-    [Header("대화창 텍스트")]
+    [Header("대화창 TMP")]
     public TextMeshProUGUI DialogueText;
     public TextMeshProUGUI NameText;
     [Header("띨빵한 얼굴 스프라이트")]
