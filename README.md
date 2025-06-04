@@ -1,2 +1,8 @@
-# RoguelikeGameProject
-RoguelikeGameProject
+# LSH's RoguelikeGameProject
+## 2025 신구대학교 로그라이크 게임 프로젝트
+"게임프로젝트입문" 강의 기말고사 과제.
+
+Made By : 이시현 (2025137048)
+
+이시현 : 멋지고, 잘생기며, 남들보다 월등히 코딩을 사랑하는 남자, 〈CuBoRi〉의 아버지, 알@빠메일.
+(그냥 키 작고, 말라비틀어진 나뭇가지같이 생긴 시끄러운 놈)
