@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c538482463dc5d44188435251fbc765b, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  characterImage:
+  - {fileID: 21300000, guid: 6d35440a769246c49b2b7aec2975b70c, type: 3}
+  - {fileID: 21300000, guid: 6d35440a769246c49b2b7aec2975b70c, type: 3}
+  - {fileID: 21300000, guid: a496ab2346eda7744b7ab80d3b93991d, type: 3}
+  characterName:
+  - "\uB9C8\uC57C"
+  - "\uB9C8\uC57C"
+  - "\uB9AC\uC9C0"
+  sfxClips: []
+  DialogueText:
+  - "\uBC18\uAC11\uACF5"
+  - "@\uC139\u3145"
+  - "\uC57C!! \uC548\uB3C4\u3157\u3153\u3150!!!!!!"
