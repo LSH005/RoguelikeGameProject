@@ -6,9 +6,13 @@ public class GamefadeImage : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public GameObject UI;
 
-    void Start()
+    private void Awake()
     {
         UI.SetActive(false);
+    }
+
+    void Start()
+    {
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         Color currentColor = spriteRenderer.color;
@@ -22,18 +26,27 @@ public class GamefadeImage : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
 
-        for (int i = 0; i < 100; i++)
+        float duration = 1.5f;
+        float startAlpha = spriteRenderer.color.a;
+
+        float elapsed = 0f;
+
+        while (elapsed < duration)
         {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+
             Color currentColor = spriteRenderer.color;
-            currentColor.a -= 0.01f;
+            currentColor.a = Mathf.Lerp(startAlpha, 0f, t);
             spriteRenderer.color = currentColor;
 
-            yield return new WaitForSeconds(0.02f);
+            yield return null;
         }
 
         Color finalColor = spriteRenderer.color;
         finalColor.a = 0f;
         spriteRenderer.color = finalColor;
+
         gameObject.SetActive(false);
         UI.SetActive(true);
     }

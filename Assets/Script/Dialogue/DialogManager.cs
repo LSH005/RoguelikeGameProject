@@ -62,10 +62,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         // --- 테스트를 위해 게임 시작 시 바로 대화 시작 (실제 게임에서는 특정 트리거로 호출) ---
-        // if (currentDialogue != null)
-        // {
-        //     StartDialogue();
-        // }
+        if (currentDialogue != null)
+        {
+            StartDialogue();
+        }
         // ---
     }
 
@@ -145,11 +145,11 @@ public class DialogueManager : MonoBehaviour
         // 원본 대사 문자열 가져오기
         string originalDialogueLine = currentDialogue.DialogueText[currentDialogueIndex];
 
-        // @@ 골뱅이*2 처리 및 자동 진행 설정
-        if (originalDialogueLine.StartsWith("@@"))
+        // 골뱅이 처리 및 자동 진행 설정
+        if (originalDialogueLine.StartsWith("@"))
         {
             isAutoAdvancing = true;
-            currentDialogueLine = originalDialogueLine.Substring(2); // 골뱅이 제외한 문자열
+            currentDialogueLine = originalDialogueLine.Substring(1); // 골뱅이 제외한 문자열
         }
         else
         {

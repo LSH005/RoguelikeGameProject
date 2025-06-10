@@ -89,7 +89,7 @@ public class TitleManager : MonoBehaviour
             Color currentColor = fadeSpriteRenderer.color;
             currentColor.a += 0.01f;
             fadeSpriteRenderer.color = currentColor;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.005f);
         }
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(NextScene);
@@ -98,7 +98,7 @@ public class TitleManager : MonoBehaviour
     IEnumerator ExitGame()
     {
         wthImage.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.01f);
         Application.Quit();
         EditorApplication.isPlaying = false;
     }
