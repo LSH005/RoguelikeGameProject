@@ -100,6 +100,5 @@ public class TitleManager : MonoBehaviour
         wthImage.SetActive(true);
         yield return new WaitForSeconds(0.01f);
         Application.Quit();
-        EditorApplication.isPlaying = false;
     }
 }
